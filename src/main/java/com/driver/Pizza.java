@@ -17,11 +17,11 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         if(isVeg){
-            this.price=300;
+            price=300;
             //this.toppingsPrice=70;
         }
         else{
-            this.price=400;
+            price=400;
             //this.toppingsPrice=120;
         }
     }
@@ -68,7 +68,7 @@ public class Pizza {
         }
         if(extraToppings!=0) bill+="Extra Toppings Added: "+extraToppings+"/n";
         if(takeAway!=0) bill+="Paperbag Added: "+takeAway+"/n";
-        bill += "Total Price :"+ (price+extraToppings+extraCheese+takeAway) +"/n";
+        bill += "Total Price: "+ (price+extraToppings+extraCheese+takeAway) +"/n";
         return this.bill;
     }
 }
