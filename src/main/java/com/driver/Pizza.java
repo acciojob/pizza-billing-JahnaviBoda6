@@ -60,13 +60,13 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        bill = "Base Price of the Pizza: "+price+"/n";
+        bill = "Base Price of the Pizza: "+price+"\n";
         if(extraCheese!=0){
-            bill+= "Extra Cheese Added: "+extraCheese+"/n";
+            bill+= "Extra Cheese Added: "+extraCheese+"\n";
         }
-        if(extraToppings!=0) bill+="Extra Toppings Added: "+extraToppings+"/n";
-        if(takeAway!=0) bill+="Paperbag Added: "+takeAway+"/n";
-        bill += "Total Price: "+ (price+extraToppings+extraCheese+takeAway) +"/n";
+        if(extraToppings!=0) bill+="Extra Toppings Added: "+extraToppings+"\n";
+        if(takeAway!=0) bill+="Paperbag Added: "+takeAway+"\n";
+        bill += "Total Price: "+ getPrice() +"\n";
         return this.bill;
     }
 }
