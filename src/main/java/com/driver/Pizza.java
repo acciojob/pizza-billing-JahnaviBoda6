@@ -11,18 +11,16 @@ public class Pizza {
     public boolean isDeluxe=false;
 
 
-    public void setDeluxe(boolean deluxe) {
-        isDeluxe = deluxe;
+    public void setDeluxe(boolean isDeluxe) {
+        this.isDeluxe = isDeluxe;
     }
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         if(isVeg){
             price=300;
-            //this.toppingsPrice=70;
         }
         else{
             price=400;
-            //this.toppingsPrice=120;
         }
     }
     public Pizza(Boolean isVeg, Boolean isDeluxe){
